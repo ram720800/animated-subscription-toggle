@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-Grandstander: "Grandstander", cursive;
+  --color-pink: #f7d1e2;
+  --color-pink1: #f5e8ee;
+  --color-pink2: #fc75b2;
+  --color-pink3: #915781;
+  --color-bl1: #202225;
+  --color-bl2: #2b2d31;
+  --color-bl3: #313338;
+  --color-wl1: #e3e5e8;
+  --color-wl2: #f2f3f5;
+  --color-wl3: #b6b9be;
+}
+.g1 {
+  background: linear-gradient(180deg, #e3e5e8 0%, #f7d1e2 100%, #202225 100%);
+}
+.g2 {
+  background: linear-gradient(90deg, #f5e8ee 0%, #f7d1e2 50%, #f99dc6 100%);
+}
+
+body,
+html {
+  font-family: var(--font-Grandstander);
+  color: var(--color-bl1);
+}
