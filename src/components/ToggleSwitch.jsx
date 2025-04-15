@@ -72,22 +72,30 @@ const ToggleSwitch = () => {
                   left: selected === "Monthly" ? "0%" : "48%",
                 }}
               />
-              <button
+              <motion.button
+                initial={{ scale: 0 }}
+                animate={{ scale: 1 }}
+                exit={{ scale: 0 }}
+                transition={{ type: "spring", stiffness: 500, damping: 35 }}
                 onClick={() => handleToggle("Monthly")}
                 className={`relative z-10 w-1/2 h-full rounded-full flex items-center justify-center transition-colors duration-300 ${
                   selected === "Monthly" ? "text-bl1" : "text-wl1"
                 }`}
               >
                 Monthly
-              </button>
-              <button
+              </motion.button>
+              <motion.button
+                initial={{ scale: 0 }}
+                animate={{ scale: 1 }}
+                exit={{ scale: 0 }}
+                transition={{ type: "spring", stiffness: 500, damping: 35 }}
                 onClick={() => handleToggle("Annual")}
                 className={`relative z-10 w-1/2 rounded-full h-full flex items-center justify-center transition-colors duration-300 ${
                   selected === "Annual" ? "text-bl1" : "text-wl1"
                 }`}
               >
                 Annual
-              </button>
+              </motion.button>
             </div>
           )}
         </div>
